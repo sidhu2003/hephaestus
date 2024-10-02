@@ -5,7 +5,7 @@ source ./version.sh
 HOST_ARCH=$(uname -m)
 ARCH=${1:-${HOST_ARCH}}
 if [ "${ARCH}" == "aarch64" ]; then
-    ARCH = "arm64"
+    ARCH="arm64"
 fi
 
 if [ "${ARCH}" == "x86_64" ]; then
